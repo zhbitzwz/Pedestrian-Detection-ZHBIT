@@ -1,0 +1,63 @@
+﻿生成启动时间为 2016/8/4 23:07:33。
+     1>项目“C:\Users\Administrator\Desktop\Pedestrian-Detection\opcuda_test\opcuda_test\opcuda_test.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\studysoftware\vs2012\mainproject\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc110.pdb" /Gd /TP /errorReport:prompt hogGpu.cpp
+         hogGpu.cpp
+     1>D:\studysoftware\OpenCV\openCV3.0-cuda\include\opencv2/core/mat.hpp(1965): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>D:\studysoftware\OpenCV\openCV3.0-cuda\include\opencv2/core/persistence.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>D:\studysoftware\OpenCV\openCV3.0-cuda\include\opencv2/core/utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>D:\studysoftware\vs2012\mainproject\VC\include\xutility(2089): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
+                 D:\studysoftware\vs2012\mainproject\VC\include\xutility(2110): 参见对正在编译的函数 模板 实例化“_OutIt std::_Copy_impl<double*,_OutIt>(_InIt,_InIt,_OutIt,std::_Nonscalar_ptr_iterator_tag)”的引用
+                 with
+                 [
+                     _OutIt=std::ostream_iterator<float>,
+                     _InIt=double *
+                 ]
+                 D:\studysoftware\vs2012\mainproject\VC\include\xutility(2131): 参见对正在编译的函数 模板 实例化“_OutIt std::_Copy_impl<_InIt,_OutIt>(_InIt,_InIt,_OutIt)”的引用
+                 with
+                 [
+                     _OutIt=std::ostream_iterator<float>,
+                     _InIt=double *
+                 ]
+                 D:\studysoftware\vs2012\mainproject\VC\include\xutility(2151): 参见对正在编译的函数 模板 实例化“_OutIt std::_Copy_impl<_InIt,_OutIt>(_InIt,_InIt,_OutIt,std::input_iterator_tag,std::output_iterator_tag)”的引用
+                 with
+                 [
+                     _OutIt=std::ostream_iterator<float>,
+                     _InIt=double *
+                 ]
+                 D:\studysoftware\vs2012\mainproject\VC\include\xutility(2176): 参见对正在编译的函数 模板 实例化“_OutIt std::_Copy_impl<double*,_OutIt>(_InIt,_InIt,_OutIt,std::true_type)”的引用
+                 with
+                 [
+                     _OutIt=std::ostream_iterator<float>,
+                     _InIt=double *
+                 ]
+                 c:\users\administrator\desktop\pedestrian-detection\opcuda_test\opcuda_test\timing.hpp(79): 参见对正在编译的函数 模板 实例化“_OutIt std::copy<std::_Vector_iterator<_Myvec>,std::ostream_iterator<_Ty>>(_InIt,_InIt,_OutIt)”的引用
+                 with
+                 [
+                     _OutIt=std::ostream_iterator<float>,
+                     _Myvec=std::_Vector_val<std::_Simple_types<double>>,
+                     _Ty=float,
+                     _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<double>>>
+                 ]
+       Link:
+         D:\studysoftware\vs2012\mainproject\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Administrator\Desktop\Pedestrian-Detection\opcuda_test\x64\Debug\opcuda_test.exe" /INCREMENTAL /NOLOGO opencv_calib3d300d.lib opencv_core300d.lib opencv_cudaarithm300d.lib opencv_cudabgsegm300d.lib opencv_cudacodec300d.lib opencv_cudafeatures2d300d.lib opencv_cudafilters300d.lib opencv_cudaimgproc300d.lib opencv_cudalegacy300d.lib opencv_cudaobjdetect300d.lib opencv_cudaoptflow300d.lib opencv_cudastereo300d.lib opencv_cudawarping300d.lib opencv_cudev300d.lib opencv_features2d300d.lib opencv_flann300d.lib opencv_hal300d.lib opencv_highgui300d.lib opencv_imgcodecs300d.lib opencv_imgproc300d.lib opencv_ml300d.lib opencv_objdetect300d.lib opencv_photo300d.lib opencv_shape300d.lib opencv_stitching300d.lib opencv_superres300d.lib opencv_ts300d.lib opencv_video300d.lib opencv_videoio300d.lib opencv_videostab300d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Administrator\Desktop\Pedestrian-Detection\opcuda_test\x64\Debug\opcuda_test.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Administrator\Desktop\Pedestrian-Detection\opcuda_test\x64\Debug\opcuda_test.lib" /MACHINE:X64 x64\Debug\CpuGpuHogtest.obj
+         x64\Debug\cvExampleGPU.obj
+         x64\Debug\hogCpu.obj
+         x64\Debug\hogGpu.obj
+         x64\Debug\test.obj
+     1>cvExampleGPU.obj : error LNK2005: "bool help_showed" (?help_showed@@3_NA) 已经在 CpuGpuHogtest.obj 中定义
+     1>cvExampleGPU.obj : error LNK2005: "public: __cdecl Args::Args(void)" (??0Args@@QEAA@XZ) 已经在 CpuGpuHogtest.obj 中定义
+     1>cvExampleGPU.obj : error LNK2005: "public: static class Args __cdecl Args::read(int,char * *)" (?read@Args@@SA?AV1@HPEAPEAD@Z) 已经在 CpuGpuHogtest.obj 中定义
+     1>cvExampleGPU.obj : error LNK2005: "public: __cdecl App::App(class Args const &)" (??0App@@QEAA@AEBVArgs@@@Z) 已经在 CpuGpuHogtest.obj 中定义
+     1>cvExampleGPU.obj : error LNK2005: "public: void __cdecl App::run(void)" (?run@App@@QEAAXXZ) 已经在 CpuGpuHogtest.obj 中定义
+     1>cvExampleGPU.obj : error LNK2005: "public: void __cdecl App::handleKey(char)" (?handleKey@App@@QEAAXD@Z) 已经在 CpuGpuHogtest.obj 中定义
+     1>cvExampleGPU.obj : error LNK2005: main 已经在 CpuGpuHogtest.obj 中定义
+     1>hogCpu.obj : error LNK2005: main 已经在 CpuGpuHogtest.obj 中定义
+     1>hogGpu.obj : error LNK2005: main 已经在 CpuGpuHogtest.obj 中定义
+     1>test.obj : error LNK2005: main 已经在 CpuGpuHogtest.obj 中定义
+     1>C:\Users\Administrator\Desktop\Pedestrian-Detection\opcuda_test\x64\Debug\opcuda_test.exe : fatal error LNK1169: 找到一个或多个多重定义的符号
+     1>已完成生成项目“C:\Users\Administrator\Desktop\Pedestrian-Detection\opcuda_test\opcuda_test\opcuda_test.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:06.74
